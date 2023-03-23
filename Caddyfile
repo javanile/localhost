@@ -1,0 +1,18 @@
+
+{
+    auto_https disable_redirects
+}
+
+localhost:80, localhost:443 {
+	handle / {
+	    respond "
+    	    <h1>Hello, world!</h1>
+    	    <ul><li>1</li></ul>
+    	"
+	}
+
+    redir  /adminer /adminer/
+	handle /adminer/ {
+	    reverse_proxy adminer:8080
+	}
+}
