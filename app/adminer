@@ -1,0 +1,5 @@
+
+redir  /adminer /adminer/
+handle /adminer/ {
+    reverse_proxy adminer:8080
+}

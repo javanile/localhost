@@ -1,0 +1,6 @@
+respond "
+    <h1>Hello</h1>
+    <ul>
+        <li><a href=adminer>adminer</a></li>
+    </ul>
+"

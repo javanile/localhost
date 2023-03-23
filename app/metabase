@@ -1,0 +1,5 @@
+
+redir  /metabase /metabase/
+handle /metabase/ {
+    reverse_proxy metabase:3000
+}
